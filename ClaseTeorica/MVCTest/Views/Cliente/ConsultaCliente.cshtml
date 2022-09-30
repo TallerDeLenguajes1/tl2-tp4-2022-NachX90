@@ -1,0 +1,11 @@
+﻿@model MVCTest.Models.Cliente
+
+<h1>HOLA MUNDO</h1>
+<form asp-controller="Cliente" asp-action="AltaCliente" method="post">
+    <label asp-for="Name" class="">Nombre:</label>
+    <input asp-for="Name"/>
+    <label asp-for="Edad" class="">Edad:</label>
+    <input asp-for="Edad"/>
+    <button type="submit">Enviar</button>
+
+</form>
