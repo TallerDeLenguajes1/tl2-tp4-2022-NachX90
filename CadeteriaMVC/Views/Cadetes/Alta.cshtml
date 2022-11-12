@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Cargar cadete";
+}
+
+            <h1>Cargar cadete</h1>
+            <form asp-controller="Cadetes" asp-action="AltaOk" method="post">
+                <div class="form-group row m-2">
+                    <label for="Nombre" class="col-form-label col-sm-1">Nombre</label>
+                    <div class="col-sm-3">
+                        <input name="Nombre" type="text" placeholder="Ingrese el nombre" class="form-control" required/>
+                    </div>
+                </div>
+                <div class="form-group row m-2">
+                    <label for="Direccion" class="col-form-label col-sm-1">Dirección</label>
+                    <div class="col-sm-3">
+                        <input name="Direccion" type="text" placeholder="Ingrese la dirección" class="form-control" required/>
+                    </div>
+                </div>
+                <div class="form-group row m-2">
+                    <label for="Telefono" class="col-form-label col-sm-1">Teléfono</label>
+                    <div class="col-sm-3">
+                        <input name="Telefono" type="text" placeholder="Ingrese el teléfono" class="form-control" required/>
+                    </div>
+                </div>
+                <div class="form-group row m-2">
+                    <input class="btn btn-primary col-sm-2 m-1" type="submit" value="Crear cadete">
+                    <input class="btn btn-primary col-sm-2 m-1" type="reset" value="Limpiar campos">
+                </div>
+            </form>

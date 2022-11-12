@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Eliminar cadete";
+}
+
+            <h1>Eliminar cadete</h1>
+            <p>Cadete @Model</p>
+            <form asp-controller="Cadetes" asp-action="BajaOk" method="post">
+                <input type="number" name="Id" value="@Model" required hidden/>
+                <div class="form-group row m-2">
+                    <input class="btn btn-danger col-sm-2 m-1" type="submit" value="Eliminar cadete">
+                    <a asp-controller="Cadetes" asp-action="Listado" class="btn btn-primary col-sm-2 m-1">Volver</a>
+                </div>
+            </form>
